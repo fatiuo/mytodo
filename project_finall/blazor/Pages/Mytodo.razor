@@ -1,0 +1,31 @@
+@page "/MyTodo"
+
+<PageTitle>Weather forecast</PageTitle>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>detail</th>
+                <th>DueDate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in client.ToDoAsync().Result)
+            {
+                <tr>
+                    <td>@t.Id</td>
+                    <td>@t.Title</td>
+                    <td>@t.Details</td>
+                    <td>@t.DueDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+@code {
+      static HttpClient httpClient=new HttpClient();
+    swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+}

@@ -1,0 +1,47 @@
+﻿@page "/EditPage"
+
+@using System.Net.Http
+@using static HttpClient httpClient
+<PageTitle>EditPage</PageTitle>
+
+<div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+    <label>Enter your passwordPage that you want to edit</label>
+    
+    <div class="form-group" >
+        <input type="number"  @bind="@pass" id="id"/><p> </p>
+    </div>
+    <label>Enter your new username</label>
+    <div class="form-group">
+        <input type="text" @bind="@user" id="user"/>
+    </div>
+    <label>Enter your new hobby</label>
+    <div class="form-group">
+        <input type="text" @bind="@inter" id="hobby"/>
+    </div>
+    <label>Enter your new hobby</label>
+    <div class="form-group">
+        <input type="text"  @bind="@inter1" id="hobby1"/>
+    </div>
+    <label>Enter your new hobby</label>
+    <div class="form-group">
+        <input type="text"  @bind="@inter2" id="hobby2"/>
+    </div>
+<span class="placeholder col-12 bg-dark"></span>
+    <button type="button" class="btn btn-secondary" style="font-size:35px" @onclick="IncrementCount">Edit Account</button> 
+    </div>
+
+@code {
+  static HttpClient httpClient=new HttpClient();
+    swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+       private int pass {get;set;}
+        private string user{get;set;}
+        private string inter{get;set;}
+        private string inter1{get;set;}
+     private string inter2{get;set;}
+    private void IncrementCount()
+    {
+        client.EditpageAsync(pass,user,inter,inter1,inter2);
+    }
+
+}

@@ -1,0 +1,36 @@
+﻿@page "/TODO Menu" 
+@inject NavigationManager UriHelper
+<PageTitle>TODOcase</PageTitle>
+ <div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+<div class="alert alert-light" role="alert" style="font-size:30px">
+ what do tou want to do?
+</div>
+
+<span class="placeholder col-12 bg-dark"></span>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate">Edit</button>
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate1">Add</button>
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate2">MyTodoList</button>
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate3">DeleteTodo</button>
+</div>
+ </div>
+
+@code {
+    void Navigate()
+    {
+        UriHelper.NavigateTo("http://localhost:5025/Edit");
+    }
+    void Navigate3()
+    {
+        UriHelper.NavigateTo("http://localhost:5025/Delete");
+    }
+    void Navigate1()
+    {
+        UriHelper.NavigateTo("http://localhost:5025/AddTodo");
+    }
+    void Navigate2()
+    {
+        UriHelper.NavigateTo("http://localhost:5111/Mytodo");
+    }
+}

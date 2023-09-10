@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\project.client\project.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="Microsoft.ASPNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.ASPNetCore.SignalR.Client" Version="7.0.8" />
+    <PackageReference Include="Microsoft.ASPNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.0.5" />
+    <PackageReference Include="ObservableProperty" Version="1.0.0" />
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+    <!-- <PackageReference Include="openai" Version="1.7.2" />
+    <PackageReference Include="openai.api" Version="1.0.0" />
+    <PackageReference Include="openapi" Version="1.0.1" /> -->
+
+  </ItemGroup>
+  <ItemGroup>
+    <OpenApiReference Include="swagger.json" SourceUrl="http://localhost:5000/swagger/v1/swagger.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+</Project>

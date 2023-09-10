@@ -1,0 +1,18 @@
+﻿<Window x:Class="wpfui.TODO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfui"
+        mc:Ignorable="d"
+        Title="TODO" Height="400" Width="400">
+  <Grid>
+    <StackPanel Orientation = "Vertical" Background = "#FF7FFFD4">
+      <Button x:Name = "button" Content = "Edit todo" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+      <Button x:Name = "button1" Content = "My todo" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/> 
+      <Button x:Name = "button2" Content = "Delete todo" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+      <Button x:Name = "button3" Content = "Add todo" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>   
+       
+    </StackPanel> 
+  </Grid>
+</Window>

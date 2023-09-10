@@ -1,0 +1,28 @@
+﻿@page "/Delete"
+
+@using System.Net.Http
+@using static HttpClient httpClient
+
+<PageTitle>Delete</PageTitle>
+
+ <div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+    <label>Enter your todo id that you want to delete</label>
+        <div class="form-group" >
+        <input @bind="@id" type="number" id="id"/>
+  </div>
+    <button type="button" class="btn btn-secondary" @onclick="IncrementCount">Delete todo</button>
+    <span class="placeholder col-12 bg-dark"></span>
+
+ </div>
+
+@code {
+   static HttpClient httpClient=new HttpClient();
+   swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+private int id {get;set;}
+   private void IncrementCount()
+   {
+      client.DeleteToDoAsync(id);
+   }
+
+}

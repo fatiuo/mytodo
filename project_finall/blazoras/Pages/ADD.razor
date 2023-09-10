@@ -1,0 +1,58 @@
+﻿
+@page "/AddTodo"
+@using System.Net.Http
+@using static HttpClient httpClient
+
+
+<PageTitle>AddTodo</PageTitle>
+
+@* <button type="button" class="btn btn-secondary" >mytodos</button> *@
+
+<div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+    <label>Enter your todo id</label>
+    
+    <div class="form-group" >
+        <input type="number"  @bind="@id" id="id"/><p> </p>
+
+    </div>
+    <label>Enter your todo title</label>
+    <div class="form-group">
+        <input type="text" @bind="@title" id="title"/><p></p>
+    </div>
+    <label>Enter your todo detail</label>
+    <div class="form-group">
+        <input type="text" @bind="@detail" id="detail"/><p></p>
+    </div>
+    <label>if your todo is completed write yes else write no</label>
+    <div class="form-group">
+        <input type="text" id="iscom"/>
+    </div>
+    <div>
+    <label for="birthday">when your todo is stated?</label>
+<input type="date" @bind="@date1" id="birthday"  name="makedate"></div>
+<div>
+<label for="birthday">when will your todo ended:</label>
+<input type="date" @bind="@date2"  name="duedate"></div>
+<span class="placeholder col-12 bg-dark"></span>
+    </div>
+    <button type="button" class="btn btn-secondary" style="font-size:35px" @onclick="IncrementCount">Add todo</button> 
+
+
+@code {
+    static HttpClient httpClient=new HttpClient();
+    swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+       private int id {get;set;}
+        private string title{get;set;}
+        private string detail{get;set;}
+        public DateTime date1{get;set;}
+        private DateTime date2{get;set;}
+        private bool completed;
+
+    private void IncrementCount()
+    {
+        client.CreatToDoAsync(new TODo(title,detail,date1,date2,completed,id));
+    }
+}
+
+

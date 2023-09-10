@@ -1,0 +1,49 @@
+﻿@page "/Edit"
+
+@using System.Net.Http
+@using static HttpClient httpClient
+<PageTitle>Edit</PageTitle>
+
+<div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+    <label>Enter your todo id that you want to edit</label>
+    
+    <div class="form-group" >
+        <input type="number"  @bind="@id" id="id"/><p> </p>
+
+    </div>
+    <label>Enter your new todo title</label>
+    <div class="form-group">
+          <input type="text" @bind="@title" id="title"/><p></p>
+    </div>
+    <label>Enter your new todo detail</label>
+    <div class="form-group">
+        <input type="text" @bind="@detail" id="detail"/><p></p>
+    </div>
+    <div>
+    <label for="birthday">when your todo will be start?</label>
+<input type="text"  @bind="@date1" id="detail"/>enter date with this form:mm/dd/yyyy</div>
+<div>
+<label for="birthday">when will your todo ended:</label>
+
+<input type="text"  @bind="@date2" id="detail"/>enter date with this form:mm/dd/yyyy</div>
+<span class="placeholder col-12 bg-dark"></span></div>
+    <button type="button" class="btn btn-secondary" style="font-size:35px" @onclick="IncrementCount">Edit todo</button> 
+    
+
+@code {
+  static HttpClient httpClient=new HttpClient();
+    swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+       private int id {get;set;}
+        private string title{get;set;}
+        private string detail{get;set;}
+
+        private string date1{get;set;}
+        private string date2{get;set;}
+
+    private void IncrementCount()
+    {
+        client.EditTodoAsync(id,title,detail,date1,date2);
+    }
+
+}

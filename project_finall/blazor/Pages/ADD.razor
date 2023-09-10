@@ -1,0 +1,76 @@
+﻿
+@page "/AddTodo"
+@using System.Net.Http
+@* @using static HttpClient httpClient *@
+
+
+<PageTitle>AddTodo</PageTitle>
+
+@* <button type="button" class="btn btn-secondary" >mytodos</button> *@
+
+<div class="container">
+    <div class="alert alert-success" style="background-color: aqua; font-family: 'Verdana, Geneva, Tahoma, sans-serif; padding: 10px;">
+        <div class="form-group">
+            <label for="id">Enter your todo id</label>
+            <input type="number" class="form-control" @bind="@id" id="id" />
+        </div>
+
+        <div class="form-group">
+            <label for="title">Enter your todo title</label>
+            <input type="text" class="form-control" @bind="@title" id="title" />
+        </div>
+
+        <div class="form-group">
+            <label for="detail">Enter your todo detail</label>
+            <input type="text" class="form-control" @bind="@detail" id="detail" />
+        </div>
+
+        <div class="form-group">
+            <label for="iscom">If your todo is completed, write 'yes'; else, write 'no'</label>
+            <input type="text" class="form-control" @bind="@iscomp" id="iscom" />
+        </div>
+
+        <div class="form-group">
+            <label for="makedate">When your todo is started?</label>
+            <input type="date" class="form-control" @bind="@date1" id="makedate" name="makedate" />
+        </div>
+
+        <div class="form-group">
+            <label for="duedate">When will your todo end?</label>
+            <input type="date" class="form-control" @bind="@date2" id="duedate" name="duedate" />
+        </div>
+
+        <button type="button" class="btn btn-secondary" style="font-size: 35px" @onclick="IncrementCount">Add todo</button>
+    </div>
+</div>
+
+<style>
+    .container {
+        margin: 20px auto;
+        max-width: 1110px;
+        max-height: fit-content;
+    }
+</style>
+@code {
+    static HttpClient httpClient=new HttpClient();
+    swaggerClient client = new swaggerClient("http://localhost:5000/", httpClient);
+
+       private int id {get;set;}
+       private string iscomp{get;set;}
+        private string title{get;set;}
+        private string detail{get;set;}
+        public DateTime date1{get;set;}
+        private DateTime date2{get;set;}
+        private bool completed{get;set;}
+
+    private void IncrementCount()
+    {
+        if(iscomp=="yes")
+            completed=true;
+        else
+            completed=false;
+        client.CreatToDoAsync(new TODo(title,detail,date1,date2,completed,id));
+    }
+}
+
+

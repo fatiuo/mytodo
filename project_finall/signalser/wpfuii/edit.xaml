@@ -1,0 +1,29 @@
+﻿<Window x:Class="wpfui.edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfui"
+        mc:Ignorable="d"
+        Title="Edit" Height="650" Width="400">
+    <Grid Background="#FF8A2BE2">
+        <StackPanel Orientation="Vertical"  Margin="20">
+        <Calendar x:Name="calendar" Visibility="Collapsed" />
+            <TextBlock Text="What is your Todo ID?" FontSize="15" Margin="2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="id" Width="200" Height="30" HorizontalAlignment="Center"/>
+            
+            <TextBlock Text="What is your new Todo Title?" FontSize="15" Margin="2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="title" Width="200" Height="30" HorizontalAlignment="Center"/>
+            
+            <TextBlock Text="What is your new Todo Details?" FontSize="15" Margin="2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="detail" Width="200" Height="30" HorizontalAlignment="Center"/>
+            
+            <TextBlock Text="How many days do you have?" FontSize="15" Margin="2" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="dayhave" Width="200" Height="30" HorizontalAlignment="Center"/>
+
+            <Button x:Name="button" Content="Edit Todo" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+            <Button x:Name="CALen" Content="Show Calendar" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,111 @@
+﻿@page "/OpenAI"
+@using System.Net.Http;
+@using System.Text;
+@using System.Windows;
+@using Newtonsoft.Json;
+@using OpenAI_API;
+@using OpenAI
+@using System.Threading.Tasks;
+@using OpenAI_API.Completions;
+<PageTitle>OpenAI</PageTitle>
+<div class="container">
+    <div class="alert alert-success" style="background-color: aqua; font-family: 'Verdana, Geneva, Tahoma, sans-serif; padding: 20px;">
+        <div class="row">
+            <div class="col-12">
+                <span class="placeholder bg-dark"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <textarea class="form-control text-center" @bind="@Answer" id="ChatTextBox" readonly="true" style="margin: 10px; font-weight: bold;"></textarea>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-12 text-center">
+                <p>Choose one button and enter your task</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" style="font-size: 49px;">
+                <input class="form-control text-center" style="font-size: 30px;" @bind="@UserInputTextBox" id="UserInputTextBox">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-6 mx-auto">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-secondary" @onclick="Stress">Stress</button>
+                    <button type="button" class="btn btn-secondary" @onclick="MakeMotivation">MakeMove</button>
+                    <button type="button" class="btn btn-secondary" @onclick="BuildSkill">Skill</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+        private string UserInputTextBox{get;set;}
+        private string outputResult{get;set;}
+        private string Answer{get;set;}
+        async void BuildSkill()
+        {
+            outputResult = "";
+
+            OpenAIAPI openai = new OpenAIAPI("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");
+            CompletionRequest completionRequest = new CompletionRequest();
+            completionRequest.Prompt = $"i think i dont have enough skill and knowledge to do {UserInputTextBox} can you give me a solution";
+            completionRequest.Model = OpenAI_API.Models.Model.DavinciText;
+            completionRequest.MaxTokens = 1024;
+
+            var completions = await openai.Completions.CreateCompletionAsync(completionRequest);
+
+            foreach (var completion in completions.Completions)
+            {
+                outputResult += completion.Text;
+            }
+            Answer=outputResult;
+
+
+
+        }
+
+        async void MakeMotivation()
+        {
+            outputResult = "";
+
+            OpenAIAPI openai = new OpenAIAPI("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");
+            CompletionRequest completionRequest = new CompletionRequest();
+            completionRequest.Prompt = $"i dont have motivation to do my {UserInputTextBox} can you give me a motivation for doing my{UserInputTextBox}";
+            completionRequest.Model = OpenAI_API.Models.Model.DavinciText;
+            completionRequest.MaxTokens = 1024;
+
+            var completions = await openai.Completions.CreateCompletionAsync(completionRequest);
+
+            foreach (var completion in completions.Completions)
+            {
+                outputResult += completion.Text;
+            }
+            Answer=outputResult;
+
+
+        }
+        async void Stress()
+        {
+            outputResult = "";
+
+            OpenAIAPI openai = new OpenAIAPI("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");
+            CompletionRequest completionRequest = new CompletionRequest();
+            completionRequest.Prompt =$"i have stress for doing{UserInputTextBox} can you give me a solution for decreas my stress";
+            completionRequest.Model = OpenAI_API.Models.Model.DavinciText;
+            completionRequest.MaxTokens = 1024;
+
+            var completions = await openai.Completions.CreateCompletionAsync(completionRequest);
+
+            foreach (var completion in completions.Completions)
+            {
+                outputResult += completion.Text;
+            }
+            Answer=outputResult;
+            
+
+        }
+    }
+

@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = project
+build_property.RootNamespace = project
+build_property.ProjectDir = d:\project\project\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\project\project
+build_property._RazorSourceGeneratorDebug = 
+
+[d:/project/project/blazoras/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/ADD.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcQURELnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/DeletePage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRGVsZXRlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/EditPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRWRpdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/FirstPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcRmlyc3RQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/MyPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcTXlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/MYtodo.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcTVl0b2RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Pages/TodoCase.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcUGFnZXNcVG9kb0Nhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcU2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXEFwcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/ADD.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEFERC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXENvdW50ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXERlbGV0ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/DeletePage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXERlbGV0ZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/EditPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEVkaXRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEZldGNoRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/FirstPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEZpcnN0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/MyPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXE15UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/Mytodo.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXE15dG9kby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/TodoCase.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXFRvZG9DYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFNoYXJlZFxTdXJ2ZXlQcm9tcHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazoras/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcU2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vm77ohyh86
+
+[d:/project/project/blazoras/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yYXNcU2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ztihvyxkvi
+
+[d:/project/project/blazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFNoYXJlZFxNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-knx6n116e5
+
+[d:/project/project/blazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFNoYXJlZFxOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-sohpznoefc
+
+[d:/project/project/blazor/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/project/project/blazor/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Ymxhem9yXFBhZ2VzXF9Ib3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

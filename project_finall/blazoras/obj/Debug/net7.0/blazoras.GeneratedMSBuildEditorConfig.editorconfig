@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = blazoras
+build_property.RootNamespace = blazoras
+build_property.ProjectDir = C:\Users\ok\Desktop\project\blazoras\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ok\Desktop\project\blazoras
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ok/Desktop/project/blazoras/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/ADD.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQURELnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/DeletePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/EditPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/FirstPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlyc3RQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/MyPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/MYtodo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTVl0b2RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Pages/TodoCase.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kb0Nhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ok/Desktop/project/blazoras/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9lkbv2nuh5
+
+[C:/Users/ok/Desktop/project/blazoras/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8z5kfsjyef

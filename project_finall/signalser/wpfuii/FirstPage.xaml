@@ -1,0 +1,24 @@
+﻿<Window x:Class="wpfui.FirstPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfui"
+        mc:Ignorable="d"
+        Title="FirstPage" Height="600" Width="400">
+    <Grid Background="#FFFA8072">
+        <StackPanel Orientation="Vertical"  Margin="20">
+            <TextBlock FontSize="18" Margin="0 0 0 10" HorizontalAlignment="Center" FontWeight="Bold">Please Enter your UserName</TextBlock>
+            <TextBox x:Name="userBox" Height="35" Width="210" Margin="10" />
+            <TextBlock  FontSize="18" Margin="0 0 0 10" HorizontalAlignment="Center" FontWeight="Bold">Please Enter your Password</TextBlock>
+            <PasswordBox x:Name="pwBox" Height="35" Width="210" MaxLength="15" Margin="10" />
+            <TextBlock  FontSize="18" Margin="0 0 0 10" HorizontalAlignment="Center" FontWeight="Bold">Please write your three hobbies</TextBlock>
+            <TextBox x:Name="enjoy1" Width="210" Height="30" Margin="10" />
+            <TextBox x:Name="enjoy2" Width="210" Height="30" Margin="10" />
+            <TextBox x:Name="enjoy3" Width="210" Height="30" Margin="10" />
+            <Button x:Name="button" Content="Sign in" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+            <Button x:Name="button1" Content="Next" Width="120" Height="40" HorizontalAlignment="Center" Background="#FF2F4F4F" Foreground="White" FontWeight="Bold" Margin="0 20 0 0"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

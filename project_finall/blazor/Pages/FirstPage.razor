@@ -1,0 +1,33 @@
+﻿@page "/Menu" 
+@inject NavigationManager UriHelper
+<PageTitle>TODOcase</PageTitle>
+ <div class="alert alret-success" style="background-color: aqua;font-family: 'Verdana, Geneva, Tahoma, sans-serif;">
+    <span class="placeholder col-12 bg-dark"></span>
+<div class="alert alert-light" role="alert" style="font-size:30px">
+ what do tou want to do?
+</div>
+
+<span class="placeholder col-12 bg-dark"></span>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate">Edit Account</button>
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate1">Delete Account</button>
+  <button class="btn btn-secondary" style="padding:26px; font-size:31px;" type="button"@onclick="Navigate2">Add Account and Todos Menu</button>
+
+</div>
+ </div>
+
+@code {
+    void Navigate()
+    {
+        UriHelper.NavigateTo("http://localhost:5263/EditPage");
+    }
+    void Navigate1()
+    {
+        UriHelper.NavigateTo("http://localhost:5263/DeletePage");
+    }
+    void Navigate2()
+    {
+        UriHelper.NavigateTo("http://localhost:5263/Mypage");
+    }
+
+}

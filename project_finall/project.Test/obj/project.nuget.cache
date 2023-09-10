@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "v55sPeR4OB+NhOo9HoMW4sUCAgpObkbKc+C/yCkdkqNGXBbcrfOLvNrF1fCd+evefLqA/TzEaSibCrsiYs4Dbw==",
+  "success": false,
+  "projectFilePath": "c:\\project\\project\\project.Test\\project.Test.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "NSwag.ApiDescription.Client"
+    }
+  ]
+}
